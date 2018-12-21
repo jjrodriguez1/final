@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F50F76E9-ADB6-4663-AA3A-D44DDB19A764}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AplicacionMosoRodriguez</RootNamespace>
+    <AssemblyName>AplicacionMosoRodriguez</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AltaMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaMesa.Designer.cs">
+      <DependentUpon>AltaMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaOperador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaOperador.Designer.cs">
+      <DependentUpon>AltaOperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaProducto.Designer.cs">
+      <DependentUpon>AltaProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComandaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ComandaReporte.Designer.cs">
+      <DependentUpon>ComandaReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditarAsignacionMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditarAsignacionMesa.Designer.cs">
+      <DependentUpon>EditarAsignacionMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EnvioEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EnvioEmail.Designer.cs">
+      <DependentUpon>EnvioEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GesationMesaOcupada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GesationMesaOcupada.Designer.cs">
+      <DependentUpon>GesationMesaOcupada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionMesas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionMesas.Designer.cs">
+      <DependentUpon>GestionMesas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionOperador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionOperador.Designer.cs">
+      <DependentUpon>GestionOperador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListadoOperadores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoOperadores.Designer.cs">
+      <DependentUpon>ListadoOperadores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GestionProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GestionProductos.Designer.cs">
+      <DependentUpon>GestionProductos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuCocina.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuCocina.Designer.cs">
+      <DependentUpon>MenuCocina.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuGerente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuGerente.Designer.cs">
+      <DependentUpon>MenuGerente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuMozo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuMozo.Designer.cs">
+      <DependentUpon>MenuMozo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VentaReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VentaReporte.Designer.cs">
+      <DependentUpon>VentaReporte.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AltaMesa.resx">
+      <DependentUpon>AltaMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaOperador.resx">
+      <DependentUpon>AltaOperador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaProducto.resx">
+      <DependentUpon>AltaProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComandaReporte.resx">
+      <DependentUpon>ComandaReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditarAsignacionMesa.resx">
+      <DependentUpon>EditarAsignacionMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EnvioEmail.resx">
+      <DependentUpon>EnvioEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GesationMesaOcupada.resx">
+      <DependentUpon>GesationMesaOcupada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionMesas.resx">
+      <DependentUpon>GestionMesas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionOperador.resx">
+      <DependentUpon>GestionOperador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GestionProductos.resx">
+      <DependentUpon>GestionProductos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoOperadores.resx">
+      <DependentUpon>ListadoOperadores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuCocina.resx">
+      <DependentUpon>MenuCocina.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuGerente.resx">
+      <DependentUpon>MenuGerente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuMozo.resx">
+      <DependentUpon>MenuMozo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="VentaReporte.resx">
+      <DependentUpon>VentaReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DLL\DLL.csproj">
+      <Project>{fccff4ff-fc30-4620-9b0e-7ec28ce82a5f}</Project>
+      <Name>DLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+      <Project>{3cd0dcfe-e511-4c29-8a11-6870e74cb734}</Project>
+      <Name>Interfaces</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Repositorios\Repositorios.csproj">
+      <Project>{b72028d0-3e8e-4059-919f-cb94050c764c}</Project>
+      <Name>Repositorios</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Imagenes\beer.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
